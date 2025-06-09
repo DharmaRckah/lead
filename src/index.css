@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+:root {
+  --color-primary: #ff6324; /* Your orange color */
+}
+
+/* You can define a utility class if needed */
+.bg-primary {
+  background-color: var(--color-primary);
+}
+.text-primary {
+  color: var(--color-primary);
+}
+.border-primary {
+  border-color: var(--color-primary);
+}
+.ring-primary {
+  --tw-ring-color: var(--color-primary);
+}
+.fill-primary {
+  fill: var(--color-primary);
+}
+
+@keyframes spin-hero {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-10deg); } /* Rotate left 30% */
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(10deg); } /* Rotate right 30% */
+  100% { transform: rotate(0deg); }
+}
+
+.animate-spin-hero {
+  animation: spin-hero 10s infinite ease-in-out; /* 4s duration, infinite loop */
+}
